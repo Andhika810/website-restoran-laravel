@@ -1,87 +1,59 @@
-<p align="center">
-<img src="https://raw.githubusercontent.com/jhonarendra/prognet8/master/public/images/logo.png" />
-<img src="https://raw.githubusercontent.com/jhonarendra/prognet8/master/public/images/logo-text.png" />
-</p>
-<p align="center">Website restoran dengan framework Laravel 5.6</p>
+# 🍽 Website Restoran - Laravel
 
-## Installation
+Website Restoran adalah aplikasi berbasis Laravel yang dirancang untuk membantu pengelolaan restoran secara digital.  
+Sistem ini menyediakan fitur reservasi meja, pemesanan makanan, manajemen menu, serta dashboard admin dan pegawai.
 
-Laravel 5.6 menggunakan PHP versi 7.0. Jadi kalau belum update dulu. Lalu pastikan sudah menginstal composer.
+---
 
-1. Clone repository, bisa di download .zip atau dengan perintah git clone seperti ini
+## 🚀 Fitur Utama
 
-```
-git clone https://github.com/jhonarendra/prognet8.git
-```
+### 👤 Pelanggan
+- Registrasi & Login
+- Melihat daftar menu / hidangan
+- Melakukan pemesanan makanan
+- Melakukan reservasi meja
+- Melihat riwayat pemesanan
+- Mengelola profil dan pengaturan akun
 
-2. Pada cmd, pindah ke folder prognet8 contohnya
+### 👨‍💼 Admin / Pegawai
+- Dashboard statistik
+- Manajemen data restoran
+- Manajemen menu / hidangan
+- Kelola reservasi pelanggan
+- Kelola pemesanan
+- Pengaturan sistem
 
-```
-cd c:/xampp/htdocs/prognet8
-```
+---
 
-lalu instal composer
+## 🛠 Teknologi yang Digunakan
 
-```
+- PHP
+- Laravel
+- MySQL
+- Blade Template
+- Bootstrap / CSS
+- JavaScript
+
+---
+
+## ⚙️ Instalasi
+
+1. Clone repository
+```bash
+git clone https://github.com/Andhika810/website-restoran-laravel.git
+
+Masuk ke folder project
+
+cd website-restoran-laravel
+
+Install dependency
+
 composer install
-```
 
-3. Edit pengaturan database di file `.env`, juga masukkan perintah ini untuk mengisi `APP_KEY`
+Copy file environment
 
-```
+cp .env.example .env
+
+Generate application key
+
 php artisan key:generate
-```
-
-4. Migrasi tabelnya ke database dengan perintah
-
-```
-php artisan migrate
-```
-
-Lalu masukkan perintah berikut untuk insert beberapa data ke database
-
-```
-php artisan db:seed
-```
-
-5. Siap dijalankan...
-
-<p align="center">Apabila memerlukan database sqldump, file bernama prognet8.sql</p>
-
-## Contributing
-
-1. Jika sudah di clone, pull dulu repository ini dengan perintah berikut, supaya dapat editan terbaru
-
-```
-git pull origin master
-```
-
-2. Edit projek sesuai keinginan
-3. Kalau sudah diedit, push kembali seperti perintah berikut
-
-```
-git add .
-```
-
-```
-git commit -m "pesan"
-```
-
-```
-git push origin master
-```
-## Screenshot
-![](https://raw.githubusercontent.com/jhonarendra/prognet8/master/screenshot/index.png)
-
-## Online Demo
-[DEMO](http://prognet8.tk/public)
-
-## Kelompok 8
-
-<p>1605551049 - Putu Jhonarendra</p>
-<p>1605551113 - ILHAM YOGA PRABHASWARA</p>
-<p>1605551054 - I MADE ADHIARTA WIKANTYASA</p>
-<p>1605551023 - Anak Agung Bagus Arya Wiradarma</p>
-<p>1605551097 - MARRIA TESALONIKA SIREGAR</p>
-<p>1605552028 - Dwiki Surya Chen</p>
-<p>1605552033 - Boy Jehezkiel Kamanang Mahar</p>
